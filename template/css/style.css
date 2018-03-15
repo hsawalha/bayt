@@ -1,0 +1,38 @@
+@charset "utf-8";
+/* CSS Document */
+
+.leftFixed {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    background-color: red;
+    color: white;
+    text-shadow: none;
+    z-index: 1;
+    display: none;
+    text-align: center;
+}
+.rightFixed {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: auto;
+    width: 60px;
+    background-color: red;
+    color: white;
+    text-shadow: none;
+    z-index: 1;
+    display: none;
+    text-align: center;
+}
+
+ul li a{
+    z-index: 100;
+}
+
+
+.div page{background-color: #ED2338;}
+.profile-header {text-align: center;}

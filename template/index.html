@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">   
+    <div class="row">
+        <div class="offset-lg-4 col-lg-4 col-sm-6 col-12 main-section text-center">   
+       <div data-role="page" id="page">
+          <div data-role="header">
+         <h1></h1>
+          </div>
+           <div role="main" class="ui-content">
+              <ul data-role="listview" data-inset="true">
+	               <li>
+                   <div class="leftFixed">PASS</div>
+                    
+                     <div class="row user-detail">
+                     <div class="col-lg-12 col-sm-12 col-12">
+                    <img src="img/man01.png" class="rounded-circle img-thumbnail">
+                    <h5>ALI AHMAD</h5>
+                    <p> Human Resource Manager</p>
+                    <hr>
+                    <h5>EXPERT AT</h5>
+                    <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
+                    <hr>
+                    <h5>INTERESTED IN EXPLORING</h5>
+                    <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
+                    <hr>
+                    <a href="#" class="btn btn-success btn-sm">Pass</a>
+                    <a href="#" class="btn btn-info btn-sm">Meet</a>
+                 </div>		 
+              </div>
+             <div class="rightFixed">DIV</div>
+            </li>
+           </ul> 
+            
+          </div>
+        </div>
+    </div>
+</div>
+	</div>
+
+<script type="text/javascript">
+	$(document).on("pagecreate", "#page", function(){
+    
+    $("li a").on("swiperight",function(){
+        $(this).parents("li").find(".leftFixed").show();
+        $(this).parents("li").find(".rightFixed").hide();
+        $(this).animate({"margin-left": "60px", "margin-right": "0px"}, 200);
+    });
+    $("li a").on("swipeleft",function(){
+        $(this).parents("li").find(".leftFixed").hide();
+        $(this).parents("li").find(".rightFixed").show();
+        $(this).animate({"margin-right": "60px", "margin-left": "0px"}, 200);
+    });
+
+
+});
+</script>
+	
+	
+</body>
+</html>
